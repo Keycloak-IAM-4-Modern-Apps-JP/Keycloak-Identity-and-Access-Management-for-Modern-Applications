@@ -18,7 +18,7 @@ app.get('/callback/', function(req, res) {
 
     console.info('Authorization Code: ' + code + '\n');
 
-    axios.post('http://localhost:8080/auth/realms/myrealm/protocol/openid-connect/token', querystring.stringify({
+    axios.post('http://localhost:8080/realms/myrealm/protocol/openid-connect/token', querystring.stringify({
         client_id: 'cli',
         grant_type: 'authorization_code',
         redirect_uri: 'http://localhost:' + port + '/callback',
@@ -30,4 +30,4 @@ app.get('/callback/', function(req, res) {
     });
 });
 
-open('http://localhost:8080/auth/realms/myrealm/protocol/openid-connect/auth?client_id=cli&redirect_uri=http://localhost:' + port + '/callback&response_type=code');
+open('http://localhost:8080/realms/myrealm/protocol/openid-connect/auth?client_id=cli&redirect_uri=http://localhost:' + port + '/callback&response_type=code');
