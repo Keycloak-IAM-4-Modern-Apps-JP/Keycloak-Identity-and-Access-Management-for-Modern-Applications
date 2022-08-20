@@ -1,7 +1,7 @@
 {
   "web": {
     "client_id": "mywebapp",
-    "client_secret": CLIENT_SECRET,
+    "client_secret": "CLIENT_SECRET",
     "auth_uri": "http://localhost:8180/realms/myrealm/protocol/openid-connect/auth",
     "token_uri": "http://localhost:8180/realms/myrealm/protocol/openid-connect/token",
     "issuer": "http://localhost:8180/realms/myrealm",
