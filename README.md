@@ -1,68 +1,79 @@
-# Keycloak - Identity and Access Management for Modern Applications
+# 実践 Keycloak - OpenID Connect、OAuth 2.0を利用したモダンアプリケーションのセキュリティー保護
 
-<a href="https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493?utm_source=github&utm_medium=repository&utm_campaign=9781800562493"><img src="https://static.packt-cdn.com/products/9781800562493/cover/smaller" alt="Keycloak - Identity and Access Management for Modern Applications" height="256px" align="right"></a>
+<a href="https://www.amazon.co.jp/dp/4814400098"><img src="https://images-na.ssl-images-amazon.com/images/I/81omwIVptSL.jpg" alt="実践 Keycloak - OpenID Connect、OAuth 2.0を利用したモダンアプリケーションのセキュリティー保護" height="512px" align="left"></a>O'Reilly Japanから出版される「[Keycloak - OpenID Connect、OAuth 2.0を利用したモダンアプリケーションのセキュリティー保護](https://www.amazon.co.jp/dp/4814400098)」のコードリポジトリーです。
 
-This is the code repository for [Keycloak - Identity and Access Management for Modern Applications](https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493?utm_source=github&utm_medium=repository&utm_campaign=9781800562493), published by Packt.
+## 本書について
 
-**Harness the power of Keycloak, OpenID Connect, and OAuth 2.0 protocols to secure applications**
+本書は、KeycloakのコアディベロッパーであるRed Hat社のStian Thorgersen（Keycloakプロジェクトのリーダー）氏とPedro Igor Silva氏が中心となって執筆した「Keycloak - Identity and Access Management for Modern Applications」を翻訳したものです。
 
-## What is this book about?
-Implementing authentication and authorization for applications can be a daunting experience, often leaving them exposed to security vulnerabilities. Keycloak is an open-source solution for identity management and access management for modern applications.
+<a href="https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493?utm_source=github&utm_medium=repository&utm_campaign=9781800562493"><img src="https://static.packt-cdn.com/products/9781800562493/cover/smaller" alt="Keycloak - Identity and Access Management for Modern Applications" height="256px"></a>
 
-This book covers the following exciting features: 
-* Understand how to install, configure, and manage Keycloak
-* Secure your new and existing applications with Keycloak
-* Gain a basic understanding of OAuth 2.0 and OpenID Connect
-* Understand how to configure Keycloak to make it ready for production use
-* Discover how to leverage additional features and how to customize Keycloak to fit your needs
+----
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1800562497) today!
+以下について解説しています。
 
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" alt="https://www.packtpub.com/" border="5" /></a>
+* Keycloakのインストール、設定、管理の方法
+* Keycloakを使用したアプリケーションのセキュリティーの保護
+* OAuth2.0とOpenID Connectの基礎知識
+* Keycloakを本番環境で使用できるようにする方法
+* 追加機能を活用する方法と、ニーズに合わせてKeycloakをカスタマイズする方法
 
-## Instructions and Navigations
-All of the code is organized into folders. For example, Chapter02.
+本書は、 [こちら](https://www.amazon.co.jp/dp/4814400098)から購入可能です。
 
-The code will look like the following:
-```
-if (test expression)
-{
-  Statement upon condition is true
-}
-```
+### 対象読者と前提知識
 
-**Following is what you need for this book:**
-Developers, sysadmins, security engineers, or anyone who wants to leverage Keycloak and its capabilities for application security will find this book useful. Beginner-level knowledge of app development and authentication and authorization is expected.
+開発者、システム管理者、セキュリティーエンジニア、またはKeycloakを活用したい人なら誰でも、本書が役立つでしょう。アプリの開発、認証、認可に関する初心者レベルの知識が求められます。
 
+### ソフトウェア要件
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-14).
+次のソフトウェアとハードウェアのリストを使用すると、本にあるすべてのコードファイルを実行できます。
 
-### Software and Hardware List
-
-| Chapter  | Software required                   | OS required                        |
+| 章  | ソフトウェア要件                  | OS要件                      |
 | -------- | ------------------------------------| -----------------------------------|
-| 1-14        | Keycloak 12                      | Windows, macOS, and Linux (Any) |
-| 1-14        | OpenJDK 8+                       | Windows, macOS, and Linux (Any) |
-| 1-14       | Node.js 14+                       | Windows, Mac OS, and Linux (Any) |
-
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](http://www.packtpub.com/sites/default/files/downloads/9781800562493_ColorImages.pdf).
+| 1-14（＋補章）       | Keycloak 18.0.2                  | Windows, macOS, Linux (任意) |
+| 1-14（＋補章）       | OpenJDK 17以上                       | Windows, macOS, Linux (任意) |
+| 1-14（＋補章）       | Node.js 14以上                       | Windows, macOS, Linux (任意) |
 
 ## Code in Action
 
-Click on the following link to see the Code in Action:
-
-[YouTube](https://www.youtube.com/playlist?list=PLeLcvrwLe187DykEKXg-9Urd1Z6MQT61d)
+本書のCode in Actionのビデオが、[YouTube](https://www.youtube.com/playlist?list=PLeLcvrwLe187DykEKXg-9Urd1Z6MQT61d)で視聴できます。本書の内容に沿ってKeycloakの動作を確認できるビデオが章ごとに準備されています。ただし、これらのビデオの中ではWildFlyベースのKeycloak 12.0.4を使用しているため、本書が前提としているQuarkusベースのKeycloak 18.0.2とは操作方法などに大きな違いがある点に注意してください。WildFlyベースのKeycloakを使用すると、ほぼビデオの内容通りに操作ができます。
 
 ## Errata
 
-* Page 6 (Paragraph 5, line 1): `$ docker run -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -p 8080 quay.io/keycloak/keycloak` _should be_`$ docker run -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin -p 8080:8080 quay.io/keycloak/keycloak`
+* 現時点ではありません。
 
-### Related products 
-* Okta Administration: Up and Running [[Packt]](https://www.packtpub.com/product/okta-administration-up-and-running/9781800566644?utm_source=github&utm_medium=repository&utm_campaign=9781800562493) [[Amazon]](https://www.amazon.com/dp/1800566646)
+## 著者
+**Stian Thorgersen**（Red Hat）
 
-* Mastering Identity and Access Management with Microsoft Azure - Second Edition [[Packt]](https://www.packtpub.com/product/mastering-identity-and-access-management-with-microsoft-azure-second-edition/9781789132304?utm_source=github&utm_medium=repository&utm_campaign=9781789132304) [[Amazon]](https://www.amazon.com/dp/1789132304)
+Arjuna Technologiesでキャリアをスタートし、パブリッククラウドが世に出る何年も前にクラウドフェデレーションプラットフォームの構築に携わる。その後、Red Hatに入社し、開発者の生活をより快適にする方法を模索。これがKeycloakのアイディアの発端となり、2013年にRed Hatの開発者と共同でKeycloakプロジェクトを立ち上げる。
+現在、Keycloakのプロジェクトリーダーであり、プロジェクトのトップコントリビューターでもある。Red Hatに在籍し、シニアプリンシパルソフトウェアエンジニアとして、Red Hatや顧客のためのIAMに注力している。
+休みの日にノルウェーの山々を自転車で駆け下りることが、何よりの楽しみ。
 
-## Get to Know the Authors
-**Stian Thorgersen** started his career at Arjuna Technologies building a cloud federation platform, years before most companies were even ready for a single-vendor public cloud. He later joined Red Hat, looking for ways to make developers' lives easier, which is where the idea of Keycloak started. In 2013, Stian co-founded the Keycloak project with another developer at Red Hat. Today, Stian is the Keycloak project lead and is also the top contributor to the project. He is still employed by Red Hat as a senior principal software engineer focusing on identity and access management, both for Red Hat and for Red Hat's customers. In his spare time, there is nothing Stian likes more than throwing his bike down the mountains of Norway.
+**Pedro Igor Silva**（Red Hat）
 
-**Pedro Igor Silva** is a proud dad of amazing girls. He started his career back in 2000 at an ISP, where he had his first experiences with open source projects such as FreeBSD and Linux, as well as a Java and J2EE software engineer. Since then, he has worked in different IT companies as a system engineer, system architect, and consultant. Today, Pedro Igor is a principal software engineer at Red Hat and one of the core developers of Keycloak. His main area of interest and study is now IT security, specifically in the application security and identity and access management spaces. In his non-working hours, he takes care of his planted aquariums.
+娘たちの自慢のパパ。2000年にISPでキャリアをスタートし、JavaやJ2EEのソフトウェアエンジニアとして、FreeBSDやLinuxなどのオープンソースプロジェクトを経験。それ以来、さまざまなIT企業で、システムエンジニア、システムアーキテクト、コンサルタントとして活躍。
+現在、Red Hatのプリンシパルソフトウェアエンジニアであり、Keycloakのコアディベロッパーの1人。主な関心と研究分野は、ITセキュリティー、特にアプリケーションセキュリティーとIAM。仕事以外の時間は、水草のアクアリウムを世話している。
+
+## 翻訳者
+
+**和田 広之**（野村総合研究所：NRI OpenStandia所属）
+
+OSSを利用したシステム構築の支援、OSSサポートを業務で行いつつ様々なOSSにもコントリビューションを行っている。近年では認証・認可の分野のOSSを中心に活動しており、Keycloakに対しても機能追加、バグ修正、日本語化、公式ガイドの日本語化プロジェクトの立ち上げなどを行っている。
+ - GitHub: [wadahiro](https://github.com/wadahiro)
+ - Twitter: [wadahiro](https://twitter.com/wadahiro)
+
+**田村 広平**（フリーランス：NRI OpenStandia所属）
+
+認証・認可の分野はSun MicrosystemsがOpenSSO 9（Keycloak同様のIAMのOSS）を開発していた頃から始め、後に後継のOpenAMのコミッターとなり、多くの改良や記事の執筆を行った。OpenAMが商用化してからは、Keycloakのサポートへメインの業務をシフトし、Keycloakのバグ修正や日本語化、公式ガイドの日本語訳、@ITの連載や書籍での執筆活動などを行っている。
+ - GitHub: [k-tamura](https://github.com/k-tamura)
+ - Twitter: [tamura__246](https://twitter.com/tamura__246)
+
+**乗松 隆志**（日立製作所）
+
+OSSのサポートサービスの提供、機能の実装とコントリビューションを行っている。近年では、Financial-grade API (FAPI) Security Profileなどセキュリティ関係の標準仕様の実装とコントリビューションをKeycloakに対して行っている。
+ - GitHub: [tnorimat](https://github.com/tnorimat)
+
+**田畑 義之**（日立製作所）
+
+API管理や認証周りのOSSのコンサル/サポート/普及活動に従事。3scaleおよびkeycloakコミュニティのコントリビュータであり、多数のコードをコミットしている。
+ - GitHub: [y-tabata](https://github.com/y-tabata)
