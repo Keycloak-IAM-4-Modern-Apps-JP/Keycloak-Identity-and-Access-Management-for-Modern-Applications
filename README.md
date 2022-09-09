@@ -8,9 +8,7 @@
 
 <a href="https://www.packtpub.com/product/keycloak-identity-and-access-management-for-modern-applications/9781800562493?utm_source=github&utm_medium=repository&utm_campaign=9781800562493"><img src="https://static.packt-cdn.com/products/9781800562493/cover/smaller" alt="Keycloak - Identity and Access Management for Modern Applications" height="256px"></a>
 
-----
-
-以下について解説しています。
+<br/>以下について解説しています。
 
 * Keycloakのインストール、設定、管理の方法
 * Keycloakを使用したアプリケーションのセキュリティーの保護
