@@ -54,24 +54,24 @@ Arjuna Technologiesでキャリアをスタートし、パブリッククラウ�
 
 ## 翻訳者
 
-**和田 広之**（野村総合研究所：NRI OpenStandia所属）
+**和田 広之**（NRI OpenStandia所属）
 
 OSSを利用したシステム構築の支援、OSSサポートを業務で行いつつ様々なOSSにもコントリビューションを行っている。近年では認証・認可の分野のOSSを中心に活動しており、Keycloakに対しても機能追加、バグ修正、日本語化、公式ガイドの日本語化プロジェクトの立ち上げなどを行っている。
  - GitHub: [wadahiro](https://github.com/wadahiro)
  - Twitter: [wadahiro](https://twitter.com/wadahiro)
 
-**田村 広平**（フリーランス：NRI OpenStandia所属）
+**田村 広平**（NRI OpenStandia所属）
 
 認証・認可の分野はSun MicrosystemsがOpenSSO 9（Keycloak同様のIAMのOSS）を開発していた頃から始め、後に後継のOpenAMのコミッターとなり、多くの改良や記事の執筆を行った。OpenAMが商用化してからは、Keycloakのサポートへメインの業務をシフトし、Keycloakのバグ修正や日本語化、公式ガイドの日本語訳、@ITの連載や書籍での執筆活動などを行っている。
  - GitHub: [k-tamura](https://github.com/k-tamura)
  - Twitter: [tamura__246](https://twitter.com/tamura__246)
 
-**乗松 隆志**（日立製作所）
+**乗松 隆志**（日立製作所アーキテクチャセンタ所属）
 
 OSSのサポートサービスの提供、機能の実装とコントリビューションを行っている。近年では、Financial-grade API (FAPI) Security Profileなどセキュリティ関係の標準仕様の実装とコントリビューションをKeycloakに対して行っている。
  - GitHub: [tnorimat](https://github.com/tnorimat)
 
-**田畑 義之**（日立製作所）
+**田畑 義之**（日立製作所アーキテクチャセンタ所属）
 
 API管理や認証周りのOSSのコンサル/サポート/普及活動に従事。3scaleおよびkeycloakコミュニティのコントリビュータであり、多数のコードをコミットしている。
  - GitHub: [y-tabata](https://github.com/y-tabata)
