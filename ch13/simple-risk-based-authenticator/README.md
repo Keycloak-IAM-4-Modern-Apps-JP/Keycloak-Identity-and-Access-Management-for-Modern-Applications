@@ -4,9 +4,9 @@
 
 To build this project, execute the following command:
 
-    ./mvnw clean install
+    ./mvnw clean package
 
-Then copy the `target/simple-risk-based-authenticator.jar` to the `$KC_HOME/standalone/deployments` directory.
+Then copy the `target/simple-risk-based-authenticator.jar` to the `$KC_HOME/providers` directory.
 
 ### What is here
 
